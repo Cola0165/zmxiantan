@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,46 +9,48 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
     <title>垷坦</title>
     <style>
-        body{
-    background: #ffffff;
-    overflow-x: hidden;
-}
 ul,
 li {
     list-style: none;
 }
         header {
     position: fixed;
-    top: 0;
-    min-height: 120px;
+    
+    /* min-height: 120px; */
     width: 100%;
     z-index: 9999;
-    transition: all 1s;
+    
     background: black;
     opacity: 0.7;
 }
         .head{width: 100%;}
-        .logo{width: 15%;}
+        .logo{width: 30px;
+            margin-left: 50px;
+            margin-top: 1px;
+            margin-bottom: 1px;
+            float: left;
+        }
         .header-info
         {
             float: right;
             margin-top: 15px;
             margin-right: 80px;
         }
-header nav ul > .dropDown > ul{position:absolute;display:none;}
-header nav ul > .dropDown > ul li a{display:block;padding:5px 55px 5px 20px;color:#fff;font-size:14px;font-family:'楷体';}
+/* header nav ul > .dropDown > ul{position:absolute;display:none;} */
+header nav ul > .dropdown > ul li a{padding:5px 55px 5px 20px;color:white;font-size:18px;font-family:'楷体';}
 .dropdown-menu{background-color: black;}
 
-header nav{position:absolute;bottom:0;right:0;}
-header nav > ul > li{float:left;}
-header nav > ul > li > a{font-family: 'SourceHanS-S_Be206bf1321a330';display:block;padding:20px 0px;margin-right:80px;color:#fff;border-bottom:solid 2px transparent;font-size:21px;}
+header nav{position:absolute;right:10px;}
+/* header nav > ul > li{float:left;} */
+header nav > ul > li > a{font-family: '楷体';display:block;padding:20px 0px;margin-right:80px;color:white;border-bottom:solid 2px transparent;font-size:21px;}
 header nav > ul > li > a:hover{color: white;text-decoration: none;}
-.nav   li:hover .dropdown-menu {display: block;}
+/* .nav>li:hover .dropdown-menu {display: block;} */
 .carousel-inner img {
       width: 100%;
       height: 100%;
   }
   .news{
+    padding-top: 40px;
     width: 72%;
     margin: 0 auto;
     overflow: hidden;
@@ -100,6 +102,7 @@ width: 30%;
     width: 20%;}
     .footer{
         background-color: #252525;
+        overflow: hidden;
     }
     .foot{width: 72%;
     margin: 0 auto;
@@ -119,9 +122,12 @@ width: 30%;
     .foot-nav a{color: gray;text-decoration: none;}
     .foot-nav a:hover{color: #B7B7B7;}
     .foot-nav>ul>li>ul{
-        padding-top: 20px;
+        padding-top: 10px;
         padding-left: 0;
         font-size: 20px;
+    }
+    .foot-nav>ul>li>ul>li{
+        padding-top: 10px;
     }
     .addr{
         text-align: left;}
@@ -131,11 +137,11 @@ width: 30%;
     <header>
         <div class="head">
             <div class="logo">
-                <a href="">
+                <a href="index.html">
                     <img src="images/logo.png" class="logo">
                 </a>
             </div>
-            <div class="header-info">
+            <!-- <div class="header-info">
                 <ul>
                     <li>
                         12345678987
@@ -144,11 +150,28 @@ width: 30%;
     
                     </li>
                 </ul>
-            </div>
+            </div> -->
+            <script>
+              $(function () {
+            dropdownOpen();
+
+        });
+        function dropdownOpen(){
+            $('.dropdown').mouseover(function(){
+                $(this).addClass('show');
+                //查找当前元素子节点中的对象，修改其class，这样
+                //这样当有多个下拉菜单时，可以分别独立处理，而不会出现都下拉的bug
+                $(this).find(".dropdown-menu").addClass('show');
+            }).mouseout(function(){
+                $(this).find(".dropdown-menu").removeClass('show');
+                $(this).removeClass('show');
+            });
+        }
+            </script>
             <nav>
                 <ul class="nav">
-                    <li class="dropDown active">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown">垷坦首页</a>
+                    <li class="dropdown active">
+                        <a href="" class="" data-toggle="dropdown">垷坦首页</a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="xtsy/szfyk.html" class="dropdown-item">数字非遗库</a>
@@ -161,8 +184,8 @@ width: 30%;
                             </li>
                         </ul>
                     </li>
-                    <li class="dropDown active">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown">垷坦概况</a>
+                    <li class="dropdown active">
+                        <a href="" class="" data-toggle="dropdown">垷坦概况</a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="xtgk/wenhua.html" class="dropdown-item">文化</a>
@@ -175,16 +198,16 @@ width: 30%;
                             </li>
                         </ul>
                     </li>
-                    <li class="dropDown active">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown">垷坦文创</a>
+                    <li class="dropdown active">
+                        <a href="" class="" data-toggle="dropdown">垷坦文创</a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="xtwc/baozhuang.html" class="dropdown-item">包装</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="dropDown active">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown">玩转垷坦</a>
+                    <li class="dropdown active">
+                        <a href="" class="" data-toggle="dropdown">玩转垷坦</a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="wzxt/jtzn.html" class="dropdown-item">交通指南</a>
@@ -200,9 +223,18 @@ width: 30%;
                             </li>
                         </ul>
                     </li>
+                    <li class="dropdown active">
+                        <a href="" class="" data-toggle="dropdown">乡村治理</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="" class="dropdown-item"></a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-            </nav>-
+            </nav>
         </div>
+        
     </header>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -358,37 +390,37 @@ width: 30%;
             <div class="foot-nav">
                 <ul>
                     <li>垷坦首页<ul>
-                            <li><a href="">数字非遗库</a></li>
-                            <li><a href="">历史人物馆</a></li>
-                            <li><a href="">乡村产品展示</a></li>
+                            <li><a href="xtsy/szfyk.html">数字非遗库</a></li>
+                            <li><a href="xtsy/lsrwg.html">历史人物馆</a></li>
+                            <li><a href="xtsy/xccpzs.html">乡村产品展示</a></li>
                         </ul>
                     </li>
                     <li>垷坦概况<ul>
-                            <li><a href="">文化</a></li>
-                            <li><a href="">非遗</a></li>
-                            <li><a href="">产品</a></li>
+                            <li><a href="xtgk/wenhua.html">文化</a></li>
+                            <li><a href="xtgk/feiyi.html">非遗</a></li>
+                            <li><a href="xtgk/chanpin.html">产品</a></li>
                         </ul>
                     </li>
                     <li>垷坦文创<ul>
-                            <li><a href="">包装</a></li>
+                            <li><a href="xtwc/baozhuang.html">包装</a></li>
                         </ul>
                     </li>
                     <li>玩转垷坦<ul>
-                            <li><a href="">交通指南</a></li>
-                            <li><a href="">产品</a></li>
-                            <li><a href="">民宿</a></li>
-                            <li><a href="">地图当行</a></li>
+                            <li><a href="wzxt/jtzn.html">交通指南</a></li>
+                            <li><a href="wzxt/chanpin.html">产品</a></li>
+                            <li><a href="wzxt/minsu.html">民宿</a></li>
+                            <li><a href="wzxt/dtdh.html">地图当行</a></li>
                         </ul>
                     </li>
                     <li>数字文化<ul>
-                            <li><a href="">视听馆</a></li>
-                            <li><a href="">直播间</a></li>
-                            <li><a href="">记录生活</a></li>
+                            <li><a href="szwh/stg.html">视听馆</a></li>
+                            <li><a href="szwh/zbj.html">直播间</a></li>
+                            <li><a href="szwh/jlsh.html">记录生活</a></li>
                             <li><a href="">木疙瘩</a></li>
                         </ul>
                     </li>
                     <li>服务优化<ul>
-                            <li><a href="">游客建议</a></li>
+                            <li><a href="https://www.wjx.cn/vj/eD3sIiY.aspx">游客建议</a></li>
                             <li><a href="">疑问解答</a></li>
                         </ul>
                     </li>

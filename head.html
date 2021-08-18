@@ -1,76 +1,121 @@
-    <header>
-        <div class="head">
-            <div class="logo">
-                <a href="">
-                    <img src="images/logo.png" class="logo">
-                </a>
-            </div>
-            <div class="header-info">
-                <ul>
-                    <li>
-                        12345678987
-                    </li>
-                    <li>
+<style>
+    ul,
+li {
+    list-style: none;
+}
+        header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
     
+    background: black;
+    opacity: 0.7;
+}
+        .head{width: 100%;}
+        .logo{width: 30px;
+            margin-left: 50px;
+            margin-top: 1px;
+            margin-bottom: 1px;
+            float: left;
+        }
+        .header-info
+        {
+            float: right;
+            margin-top: 15px;
+            margin-right: 80px;
+        }
+header nav ul > .dropdown > ul li a{padding:5px 55px 5px 20px;color:white;font-size:18px;font-family:'楷体';}
+.dropdown-menu{background-color: black;}
+
+header nav{position:absolute;right:10px;}
+header nav > ul > li > a{font-family: '楷体';display:block;padding:20px 0px;margin-right:80px;color:white;font-size:21px;}
+header nav > ul > li > a:hover{color: white;text-decoration: none;}
+.bigimg {
+    width: 1920px;
+    height: 500px;
+    background: url(/images/big3.png) no-repeat;
+  }
+</style>
+<header>
+<div class="head">
+    <div class="logo">
+        <a href="index.html">
+            <img src="/images/logo.png" class="logo">
+        </a>
+    </div>
+    <script>
+      $(function () {
+    dropdownOpen();
+});
+function dropdownOpen(){
+    $('.dropdown').mouseover(function(){
+        $(this).addClass('show');
+        $(this).find(".dropdown-menu").addClass('show');
+    }).mouseout(function(){
+        $(this).find(".dropdown-menu").removeClass('show');
+        $(this).removeClass('show');
+    });
+}
+    </script>
+    <nav>
+        <ul class="nav">
+            <li class="dropdown active">
+                <a href="" class="" data-toggle="dropdown">垷坦首页</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="/xtsy/szfyk.html" class="dropdown-item">数字非遗库</a>
+                    </li>
+                    <li>
+                        <a href="/xtsy/lsrwg.html" class="dropdown-item">历史人物馆</a>
+                    </li>
+                    <li>
+                        <a href="/xtsy/xccpzs.html" class="dropdown-item">乡村产品展示</a>
                     </li>
                 </ul>
-            </div>
-            <nav>
-                <ul class="nav">
-                    <li class="dropDown active">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown">垷坦首页</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="xtsy/szfyk.html" class="dropdown-item">数字非遗库</a>
-                            </li>
-                            <li>
-                                <a href="xtsy/lsrwg.html" class="dropdown-item">历史人物馆</a>
-                            </li>
-                            <li>
-                                <a href="xtsy/xccpzs.html" class="dropdown-item">乡村产品展示</a>
-                            </li>
-                        </ul>
+            </li>
+            <li class="dropdown active">
+                <a href="" class="" data-toggle="dropdown">垷坦概况</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="/xtgk/wenhua.html" class="dropdown-item">文化</a>
                     </li>
-                    <li class="dropDown active">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown">垷坦概况</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="xtgk/wenhua.html" class="dropdown-item">文化</a>
-                            </li>
-                            <li>
-                                <a href="xtgk/feiyi.html" class="dropdown-item">非遗</a>
-                            </li>
-                            <li>
-                                <a href="xtgk/chanpin.html" class="dropdown-item">产品</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="/xtgk/feiyi.html" class="dropdown-item">非遗</a>
                     </li>
-                    <li class="dropDown active">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown">垷坦文创</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="xtwc/baozhuang.html" class="dropdown-item">包装</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropDown active">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown">玩转垷坦</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="wzxt/jtzn.html" class="dropdown-item">交通指南</a>
-                            </li>
-                            <li>
-                                <a href="wzxt/chanpin.html" class="dropdown-item">产品</a>
-                            </li>
-                            <li>
-                                <a href="wzxt/minsu.html" class="dropdown-item">民俗</a>
-                            </li>
-                            <li>
-                                <a href="wzxt/dtdh.html" class="dropdown-item">地图导航</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="/xtgk/chanpin.html" class="dropdown-item">产品</a>
                     </li>
                 </ul>
-            </nav>-
-        </div>
-    </header>
+            </li>
+            <li class="dropdown active">
+                <a href="" class="" data-toggle="dropdown">垷坦文创</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="/xtwc/baozhuang.html" class="dropdown-item">包装</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown active">
+                <a href="" class="" data-toggle="dropdown">玩转垷坦</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="wzxt/jtzn.html" class="dropdown-item">交通指南</a>
+                    </li>
+                    <li>
+                        <a href="/wzxt/chanpin.html" class="dropdown-item">产品</a>
+                    </li>
+                    <li>
+                        <a href="/wzxt/minsu.html" class="dropdown-item">民俗</a>
+                    </li>
+                    <li>
+                        <a href="/wzxt/dtdh.html" class="dropdown-item">地图导航</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+</header>
+<div class="bigimg">
+    
+</div>
