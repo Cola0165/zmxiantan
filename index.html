@@ -42,9 +42,8 @@ header nav ul > .dropdown > ul li a{padding:5px 55px 5px 20px;color:white;font-s
 
 header nav{position:absolute;right:10px;}
 /* header nav > ul > li{float:left;} */
-header nav > ul > li > a{font-family: '楷体';display:block;padding:20px 0px;margin-right:80px;color:white;border-bottom:solid 2px transparent;font-size:21px;}
-header nav > ul > li > a:hover{color: white;text-decoration: none;}
-/* .nav>li:hover .dropdown-menu {display: block;} */
+header nav > ul > li > a{font-family: '楷体';display:block;padding:20px 0px;margin-right:80px;color:white;font-size:21px;}
+header nav > ul > li > a:hover,header nav > ul > li > a:hover{color: white;text-decoration: none;}
 .carousel-inner img {
       width: 100%;
       height: 100%;
@@ -81,6 +80,20 @@ header nav > ul > li > a:hover{color: white;text-decoration: none;}
         margin-top: 40px;
         width: 100%;
     }
+    .middle>.image>.xtsy>div{
+        position: relative;float: left;width: 33%;
+    }
+    .middle>.image>.xtsy>div>img{
+        width: 200px;
+    }
+    .middle>.image>.xtsy>div>a{
+        position: relative;top: -75px;color: white;font-family: '隶书';
+    }
+    .middle>.image>.xtsy>div>a:hover{
+        color: gray;
+        text-decoration: none;
+    }
+    
     .middle>.text{font-size: 18px;
     padding-left: 6%;
     padding-right: 6%;
@@ -214,7 +227,7 @@ width: 30%;
                                 <a href="wzxt/chanpin.html" class="dropdown-item">产品</a>
                             </li>
                             <li>
-                                <a href="wzxt/minsu.html" class="dropdown-item">民俗</a>
+                                <a href="wzxt/minsu.html" class="dropdown-item">民宿</a>
                             </li>
                             <li>
                                 <a href="wzxt/dtdh.html" class="dropdown-item">地图导航</a>
@@ -300,8 +313,23 @@ width: 30%;
         <h4>LANXI XIANTAN</h4>
     </div>
     <div class="image">
-        <img src="images/lxxt.png">
+        <img src="images/lxxt.png"> 
+        <div class="xtsy" style="position:relative;top: -180px;margin-bottom: -150px;overflow: hidden;">
+            <div>
+                <img src="images/smbg.png">
+                <a href="xtsy/szfyk.html"><h4>数字非遗库</h4></a>
+            </div>
+            <div>
+                <img src="images/smbg.png">
+                <a href="xtsy/lsrwg.html"><h4>历史人物馆</h4></a>
+            </div>
+            <div>
+                <img src="images/smbg.png">
+                <a href="xtsy/xccpzs.html"><h4>乡村产品展示</h4></a>
+            </div>
+        </div>
     </div>
+    
     <div class="text">
         <p>垷坦村不仅拥有悠久的历史、丰富的数字非遗产物。据相关历史资料记载，此地还是不少名人雅士的故地以及长眠之地。唐朝丞相舒元舆、宋朝大理寺卿周三畏、宋明理学开山鼻祖周敦颐等都与垷坦有着密切的关系。</p>
     </div>
@@ -418,8 +446,8 @@ width: 30%;
                         </ul>
                     </li>
                     <li>服务优化<ul>
-                            <li><a href="https://www.wjx.cn/vj/eD3sIiY.aspx">游客建议</a></li>
-                            <li><a href="">疑问解答</a></li>
+                            <li><a href="https://www.wjx.cn/vj/eD3sIiY.aspx" target="_blank">游客建议</a></li>
+                            <li><a href="https://www.wjx.cn/vj/QijZVnE.aspx" target="_blank">疑问解答</a></li>
                         </ul>
                     </li>
                 </ul>
