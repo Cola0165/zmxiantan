@@ -9,20 +9,49 @@
 	<script src="../js/bootstrap.bundle.min.js"></script>
     <title>交通指南</title>
     <style>
+        .wrap a:link,.wrap a:hover,.wrap a:visited {
+        text-decoration: none;
+        color: gray;}
+    .wrap{
+        width: 72%;
+        margin: 0 auto;}
+        .page-nav{
+    text-align: right;
+position:relative;
+padding-top: 70px;
+padding-bottom: 10px;
+color: gray;
+}
+.page-nav>p>span{
+color: black;
+}
+.page-nav>p>span1{
+font-size: large;
+}   
+.dh>img{
+position:absolute;
+}
+.dh>h1{
+position:relative; top: 80px;left: 60px;
+font-family: '隶书';
+}
         .middle{
       width: 72%;
       margin: 0 auto;
     text-align: left;
     overflow: hidden;
+    margin-top: 50px;
     }
-    .middle>.image>img{
-        margin-top: 40px;
+    .middle>.image{
+        margin-bottom: 40px;
         max-width: 100%;
+        text-align: center;
     }
     .middle>.text{font-size: 18px;
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-bottom: 40px;
+        margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 40px;
+    margin-bottom: 40px;
     letter-spacing: 1px;
 line-height: 32px;
 color: gray;}
@@ -30,14 +59,18 @@ color: gray;}
     </style>
 </head>
 <body>
-    <div>
+    <div class="header"><script>$(".header").load("../head.html")</script></div>
+    <div class="wrap">
         <div class="dh">
             <img src="../xtgk/images/title.png">
             <h1>交通指南</h1>
         </div>
-        <p>首页/玩转垷坦/交通指南</p>
+        <div class="page-nav">
+            <p><span1>交通指南</span1> / JIAOTONG ZHINAN</p>
+            <p><a href="../index.html">首页</a> / 玩转垷坦 <span>/ 交通指南</span></p></div>
+        <hr>
     </div>
-    <hr>
+
     <div class="middle">
         <div class="title">
             <h1>交通指南</h1>
@@ -72,6 +105,6 @@ color: gray;}
             <img src="images/jtzn2.png">
         </div>
     </div>
-    <hr>
+    <div class="footer"><script>$(".footer").load("../foot.html")</script></div>
 </body>
 </html>

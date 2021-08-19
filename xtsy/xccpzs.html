@@ -9,20 +9,49 @@
 	<script src="../js/bootstrap.bundle.min.js"></script>
     <title>乡村产品展示</title>
     <style>
+        .wrap a:link,.wrap a:hover,.wrap a:visited {
+    text-decoration: none;
+    color: gray;
+}
+        .wrap{width: 72%;
+
+            margin: 0 auto;}
+        .page-nav{
+            position:relative;
+            padding-top: 125px;
+            padding-bottom: 10px;
+            color: gray;
+            text-indent: 4em;
+        }
+        .page-nav>p>span{
+            color: black;
+        }
+        .dh>img{
+            position:absolute;
+        }
+        .dh>h2{
+            position:relative; top:50px;left:80px;
+            font-family: '隶书';
+        }
         .middle{
       width: 72%;
       margin: 0 auto;
     text-align: center;
     overflow: hidden;
+    margin-top: 50px;
+    }
+    .middle>.title{
+        text-align: left;
     }
     .middle>.image>img{
         margin-top: 40px;
+        margin-bottom: 40px;
         max-width: 100%;
     }
     .middle>.text{font-size: 18px;
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-bottom: 40px;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 40px;
     letter-spacing: 1px;
 line-height: 32px;
 color: gray;}
@@ -30,14 +59,15 @@ color: gray;}
     </style>
 </head>
 <body>
-    <div>
+    <div class="header"><script>$(".header").load("../head.html")</script></div>
+    <div class="wrap">
         <div class="dh">
             <img src="images/title.png">
-            <h1>乡村产品展示</h1>
+            <h2>乡村产品展示</h2>
         </div>
-        <p>首页/垷坦首页/乡村产品展示</p>
+        <div class="page-nav"><p><a href="../index.html">首页</a> / 垷坦首页 <span>/ 乡村产品展示</span></p></div>
+        <hr>
     </div>
-    <hr>
     <div class="middle">
         <div class="title">
             <h1>女埠枇杷</h1>
@@ -50,8 +80,9 @@ color: gray;}
             <p>女埠枇杷以色艳形美、肉质细嫩、甘甜酸洁而闻名。当地枇杷主要分为两种，一种为兰溪白沙，皮薄肉厚，肉质细嫩，汁多，甜酸适口，另一种为大红袍，网质致密，汁液中等，味甜稍酸，风味浓。</p>
             <p>功效：1、润肺止咳 2、预防流感 3、增强食欲 4、强身健体 5、促进发育 6、预防癌症。</p>
         </div>
+        <hr>
     </div>
-    <hr>
+    
     <div class="middle">
         <div class="title">
             <h1>茶叶</h1>
@@ -63,14 +94,15 @@ color: gray;}
         <div class="text">
             <p>功效：1、提神益思，缓解疲劳 2、消食去腻、减肥健美 3、解热防暑、杀菌消炎 4、抗肿瘤、预防老化功效。</p>
         </div>
+        <hr>
     </div>
-    <hr>
+    
     <div class="middle">
         <div class="image">
             <img src="../xtwc/images/xccp1.png">
             <img src="../xtwc/images/xccp2.png">
         </div>
     </div>
-    <hr>
+    <div class="footer"><script>$(".footer").load("../foot.html")</script></div>
 </body>
 </html>

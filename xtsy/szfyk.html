@@ -9,20 +9,49 @@
 	<script src="../js/bootstrap.bundle.min.js"></script>
     <title>数字非遗库</title>
     <style>
+        .wrap a:link,.wrap a:hover,.wrap a:visited {
+    text-decoration: none;
+    color: gray;
+}
+        .wrap{width: 72%;
+
+            margin: 0 auto;}
+        .page-nav{
+            position:relative;
+            padding-top: 125px;
+            padding-bottom: 10px;
+            color: gray;
+            text-indent: 4em;
+        }
+        .page-nav>p>span{
+            color: black;
+        }
+        .dh>img{
+            position:absolute;
+        }
+        .dh>h2{
+            position:relative; top:50px;left:80px;
+            font-family: '隶书';
+        }
         .middle{
       width: 72%;
       margin: 0 auto;
     text-align: center;
     overflow: hidden;
+    margin-top: 50px;
+    }
+    .middle>.title{
+        text-align: left;
     }
     .middle>.image>img{
         margin-top: 40px;
+        margin-bottom: 40px;
         max-width: 100%;
     }
     .middle>.text{font-size: 18px;
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-bottom: 40px;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 40px;
     letter-spacing: 1px;
 line-height: 32px;
 color: gray;}
@@ -30,14 +59,16 @@ color: gray;}
     </style>
 </head>
 <body>
-    <div>
+    <div class="header"><script>$(".header").load("../head.html")</script></div>
+    <div class="wrap">
         <div class="dh">
             <img src="images/title.png">
-            <h1>数字非遗库</h1>
+            <h2>数字非遗库</h2>
         </div>
-        <p>首页/垷坦首页/数字非遗库</p>
+        <div class="page-nav"><p><a href="../index.html">首页</a> / 垷坦首页 <span>/ 数字非遗库</span></p></div>
+        <hr>
     </div>
-    <hr>
+    
     <div class="middle">
         <div class="title">
             <h1>木雕、泥塑</h1>
@@ -52,8 +83,9 @@ color: gray;}
         <div class="text">
             <p>周跃龙，兰溪市女埠街道垷坦村人，他自幼喜爱绘画、泥塑、木雕等，跟随师父徐晓君学习传统木雕、泥塑及古建彩绘等艺术。2000年其作品入选《中国中青年美术家作品选集》，2012年10月玉雕作品在第三届中国龙游黄龙玉赏石文化博览会中获得银奖。2017年9月，其泥塑作品《盛世中国梦》获得金华市第五届工艺美术精品评审中获得银奖。现为金华市级工艺美术大师。</p>
         </div>
+        <hr>
     </div>
-    <hr>
+    
     <div class="middle">
         <div class="title">
             <h1>銮驾</h1>
@@ -66,5 +98,6 @@ color: gray;}
             <p>垷坦銮驾始建于清朝道光年间，旧銮驾在文革时期全部烧毁，2005 年重新雕制。銮驾包括龙亭、銮驾六十四副，雕刻着水浒人物一百零八将、三国英雄人物和飞禽走兽，小巧玲珑，栩栩如生。銮驾原有仁分和义分两套。以前每逢春节元宵都会在厅上摆銮驾和制作精美的食品供游客。有盛大的庆典集会举銮驾抬龙亭，敲锣打鼓参加集会。</p>
         </div>
     </div>
+    <div class="footer"><script>$(".footer").load("../foot.html")</script></div>
 </body>
 </html>

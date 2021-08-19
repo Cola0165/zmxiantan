@@ -101,6 +101,7 @@ width: 30%;
     .icon>li{float: left;
     width: 20%;}
     .footer{
+        margin-top: 50px;
         background-color: #252525;
         overflow: hidden;
     }
@@ -154,13 +155,10 @@ width: 30%;
             <script>
               $(function () {
             dropdownOpen();
-
         });
         function dropdownOpen(){
             $('.dropdown').mouseover(function(){
                 $(this).addClass('show');
-                //查找当前元素子节点中的对象，修改其class，这样
-                //这样当有多个下拉菜单时，可以分别独立处理，而不会出现都下拉的bug
                 $(this).find(".dropdown-menu").addClass('show');
             }).mouseout(function(){
                 $(this).find(".dropdown-menu").removeClass('show');
@@ -409,7 +407,7 @@ width: 30%;
                             <li><a href="wzxt/jtzn.html">交通指南</a></li>
                             <li><a href="wzxt/chanpin.html">产品</a></li>
                             <li><a href="wzxt/minsu.html">民宿</a></li>
-                            <li><a href="wzxt/dtdh.html">地图当行</a></li>
+                            <li><a href="wzxt/dtdh.html">地图导航</a></li>
                         </ul>
                     </li>
                     <li>数字文化<ul>

@@ -9,20 +9,53 @@
 	<script src="../js/bootstrap.bundle.min.js"></script>
     <title>视听馆</title>
     <style>
+        .wrap a:link,.wrap a:hover,.wrap a:visited {
+        text-decoration: none;
+        color: gray;}
+    .wrap{
+        width: 72%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+        .page-nav{
+    text-align: right;
+position:relative;
+padding-top: 70px;
+padding-bottom: 10px;
+color: gray;
+}
+.page-nav>p>span{
+color: black;
+}
+.page-nav>p>span1{
+font-size: large;
+}   
+.dh>img{
+position:absolute;
+}
+.dh>h1{
+position:relative; top: 10px;left: 60px;
+font-family: '隶书';
+}
         .middle{
       width: 72%;
       margin: 0 auto;
     text-align: left;
     overflow: hidden;
+    margin-top: 50px;
     }
-    .middle>.image>img{
-        margin-top: 40px;
+    .middle>.image{
+        text-align: center;
+    }
+    .middle img{
         max-width: 100%;
+        margin-bottom: 40px;
     }
     .middle>.text{font-size: 18px;
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-bottom: 40px;
+        margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 40px;
+    margin-bottom: 40px;
     letter-spacing: 1px;
 line-height: 32px;
 color: gray;}
@@ -30,14 +63,17 @@ color: gray;}
     </style>
 </head>
 <body>
-    <div>
+    <div class="header"><script>$(".header").load("../head.html")</script></div>
+    <div class="wrap">
         <div class="dh">
             <img src="images/title.png">
             <h1>视听馆</h1>
         </div>
-        <p>首页/数字文化/视听馆</p>
+        <div class="page-nav">
+            <p><span1>视听馆</span1> / SHITING GUAN</p>
+            <p><a href="../index.html">首页</a> / 数字文化 <span>/ 视听馆</span></p></div>
+        <hr>
     </div>
-    <hr>
     <div class="middle">
         <div class="title">
             <h1>【美丽兰溪】白露美景垷坦村</h1>
@@ -52,8 +88,9 @@ color: gray;}
             <img src="images/stg1.png">
             <img src="images/stg2.png">
         </div>
+        <hr>
     </div>
-    <hr>
+    
     <div class="middle">
         <div class="title">
             <h1>【走进兰溪】 垷坦枇杷美名扬</h1>
@@ -76,6 +113,6 @@ color: gray;}
             <img src="images/stg3.png">
         </div>
     </div>
-    <hr>
+    <div class="footer"><script>$(".footer").load("../foot.html")</script></div>
 </body>
 </html>

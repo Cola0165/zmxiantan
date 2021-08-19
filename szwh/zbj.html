@@ -9,15 +9,47 @@
 	<script src="../js/bootstrap.bundle.min.js"></script>
     <title>直播间</title>
     <style>
+        .wrap a:link,.wrap a:hover,.wrap a:visited {
+        text-decoration: none;
+        color: gray;}
+    .wrap{
+        width: 72%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+        .page-nav{
+    text-align: right;
+position:relative;
+padding-top: 70px;
+padding-bottom: 10px;
+color: gray;
+}
+.page-nav>p>span{
+color: black;
+}
+.page-nav>p>span1{
+font-size: large;
+}   
+.dh>img{
+position:absolute;
+}
+.dh>h1{
+position:relative; top: 10px;left: 60px;
+font-family: '隶书';
+}
         .middle{
       width: 72%;
       margin: 0 auto;
     text-align: left;
     overflow: hidden;
+    margin-top: 50px;
     }
-    .middle>.image>img{
-        margin-top: 40px;
+    .middle>.image{
+        text-align: center;
+    }
+    .middle img{
         max-width: 100%;
+        margin-bottom: 40px;
     }
     .middle>.text{font-size: 18px;
     padding-left: 6%;
@@ -26,18 +58,26 @@
     letter-spacing: 1px;
 line-height: 32px;
 color: gray;}
+.middle>.text>p>span{
+    color: black;
+    font-weight: bold;
+}
 .title>h4{color: gray;}
     </style>
 </head>
 <body>
-    <div>
+    <div class="header"><script>$(".header").load("../head.html")</script></div>
+    <div class="wrap">
         <div class="dh">
             <img src="images/title.png">
             <h1>直播间</h1>
         </div>
-        <p>首页/数字文化/直播间</p>
+        <div class="page-nav">
+            <p><span1>直播间</span1> / ZHIBOJIAN</p>
+            <p><a href="../index.html">首页</a> / 数字文化 <span>/ 直播间</span></p></div>
+        <hr>
     </div>
-    <hr>
+
     <div class="middle">
         <div class="title">
             <h1>直播间</h1>
@@ -45,20 +85,20 @@ color: gray;}
         </div>
         <div class="text">
             <p>直播发展趋势愈来愈烈，为了帮助垷坦村能够赶上时代大趋势，我们团队为其在各大平台设立直播间。直播间分为封闭空间和开放空间两种类型。</p>
-            <p>封闭空间</p>
+            <p><span>封闭空间</span></p>
             <p>我们将会在垷坦村的党团服务中心设立全封闭式的直播间，在该直播间，我们主打枇杷和茶叶的销售，直播间的概念图如下图所示，直播间我们采取了新中式的风格，木制桌椅和置物架，是垷坦产品直播间因为特别的风格在众多直播间中脱颖而出，从而吸引更多的客户用直播间。在后方的架子上，我们还会摆出我们包装过的垷坦产品，从而在一定程度上增加我们产品的曝光度。</p>
         </div>
         <div class="image">
             <img src="images/zbj1.png">
         </div>
         <div class="text">
-            <p>开放空间</p>
+            <p><span>开放空间</span></p>
             <p>另外一种直播间的样式，我们将会放置在垷坦村的几大著名会堂，还会设置如上图所示的背景墙。在该类型的直播间里，我们将会采取文化和产品共同介绍的方式，主打垷坦文化的宣传，并在文化宣传的过程中，引入我们的产品，实现文化宣传和产品售卖双赢。会堂里还会有很多老人家坐在一起休闲娱乐或者是看垷坦当地的戏曲文化，或许会有很多老人家不小心入镜的意外因素，但这样反而能增加直播的生活气息，都是有利于我们的直播。</p>
         </div>
         <div class="image">
             <img src="images/zbj2.png">
         </div>
     </div>
-    <hr>
+    <div class="footer"><script>$(".footer").load("../foot.html")</script></div>
 </body>
 </html>

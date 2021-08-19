@@ -30,16 +30,16 @@ header nav ul > .dropdown > ul li a{padding:5px 55px 5px 20px;color:white;font-s
 header nav{position:absolute;right:10px;}
 header nav > ul > li > a{font-family: '楷体';display:block;padding:20px 0px;margin-right:80px;color:white;font-size:21px;}
 header nav > ul > li > a:hover{color: white;text-decoration: none;}
-.bigimg {
-    width: 1920px;
-    height: 500px;
-    background: url(/images/big3.png) no-repeat;
+.bigimg>img{
+    width: 100%;
+    height: calc(50vh);
+    margin-bottom: -50px;
   }
 </style>
 <header>
 <div class="head">
     <div class="logo">
-        <a href="index.html">
+        <a href="/index.html">
             <img src="/images/logo.png" class="logo">
         </a>
     </div>
@@ -99,7 +99,7 @@ function dropdownOpen(){
                 <a href="" class="" data-toggle="dropdown">玩转垷坦</a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a href="wzxt/jtzn.html" class="dropdown-item">交通指南</a>
+                        <a href="/wzxt/jtzn.html" class="dropdown-item">交通指南</a>
                     </li>
                     <li>
                         <a href="/wzxt/chanpin.html" class="dropdown-item">产品</a>
@@ -112,10 +112,18 @@ function dropdownOpen(){
                     </li>
                 </ul>
             </li>
+            <li class="dropdown active">
+                <a href="" class="" data-toggle="dropdown">乡村治理</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="" class="dropdown-item"></a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </nav>
 </div>
 </header>
 <div class="bigimg">
-    
+    <img src="/images/big3.png">
 </div>

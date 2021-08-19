@@ -9,35 +9,71 @@
 	<script src="../js/bootstrap.bundle.min.js"></script>
     <title>非遗</title>
     <style>
+        .wrap a:link,.wrap a:hover,.wrap a:visited {
+        text-decoration: none;
+        color: gray;}
+    .wrap{
+        width: 72%;
+        margin: 0 auto;}
+        .page-nav{
+    text-align: right;
+position:relative;
+padding-top: 70px;
+padding-bottom: 10px;
+color: gray;
+}
+.page-nav>p>span{
+color: black;
+}
+.page-nav>p>span1{
+font-size: large;
+}   
+.dh>img{
+position:absolute;
+}
+.dh>h1{
+position:relative; top: 70px;left: 60px;
+font-family: '隶书';
+}
         .middle{
       width: 72%;
       margin: 0 auto;
     text-align: left;
     overflow: hidden;
+    margin-top: 50px;
     }
-    .middle>.image>img{
-        margin-top: 40px;
+    .middle>.image{
+        margin-bottom: 40px;
         max-width: 100%;
+        text-align: center;
     }
     .middle>.text{font-size: 18px;
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-bottom: 40px;
+        margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 40px;
+    margin-bottom: 40px;
     letter-spacing: 1px;
 line-height: 32px;
 color: gray;}
+.middle>.text>p>span{
+    color: black;
+    font-weight: bold;
+}
 .title>h4{color: gray;}
     </style>
 </head>
 <body>
-    <div>
+    <div class="header"><script>$(".header").load("../head.html")</script></div>
+    <div class="wrap">
         <div class="dh">
             <img src="images/title.png">
             <h1>非遗</h1>
         </div>
-        <p>首页/垷坦概况/非遗</p>
+        <div class="page-nav">
+            <p><span1>垷坦非遗</span1> / XIANTAN FEIYI</p>
+            <p><a href="../index.html">首页</a> / 垷坦概况 <span>/ 非遗</span></p></div>
+        <hr>
     </div>
-    <hr>
     <div class="middle">
         <div class="title">
             <h1>木雕、泥塑</h1>
@@ -49,8 +85,9 @@ color: gray;}
         <div class="image">
             <img src="images/fy1.png"><img src="images/fy2.png">
         </div>
+        <hr>
     </div>
-    <hr>
+    
     <div class="middle">
         <div class="title">
             <h1>銮驾</h1>
@@ -63,5 +100,6 @@ color: gray;}
             <img src="images/fy3.png">
         </div>
     </div>
+    <div class="footer"><script>$(".footer").load("../foot.html")</script></div>
 </body>
 </html>

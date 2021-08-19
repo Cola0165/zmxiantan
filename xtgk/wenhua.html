@@ -9,12 +9,12 @@
 	<script src="../js/bootstrap.bundle.min.js"></script>
     <title>文化</title>
     <style>
-        a:link,a:hover,a:visited,a:active {
-    text-decoration: none;
-    color: gray;}
-        .wrap{width: 72%;
-
-margin: 0 auto;}
+    .wrap a:link,.wrap a:hover,.wrap a:visited {
+        text-decoration: none;
+        color: gray;}
+    .wrap{
+        width: 72%;
+        margin: 0 auto;}
 .page-nav{
     text-align: right;
 position:relative;
@@ -24,7 +24,6 @@ color: gray;
 }
 .page-nav>p>span{
 color: black;
-font-weight:600;
 }
 .page-nav>p>span1{
 font-size: large;
@@ -45,17 +44,18 @@ font-family: '隶书';
     }
     
     .middle>.image>img{
-        margin-top: 40px;
+        margin-bottom: 40px;
         max-width: 100%;
     }
     .middle>.text{font-size: 18px;
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-bottom: 40px;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 40px;
+    margin-bottom: 40px;
     letter-spacing: 1px;
 line-height: 32px;
 color: gray;
-margin-top: 40px;}
+}
 .middle>.text>p>span{
     color: black;
     font-weight: bold;
@@ -64,6 +64,7 @@ margin-top: 40px;}
     </style>
 </head>
 <body>
+    <div class="header"><script>$(".header").load("../head.html")</script></div>
     <div class="wrap">
         <div class="dh">
             <img src="images/title.png">
@@ -116,8 +117,8 @@ margin-top: 40px;}
             <p>明朝万历庚申年（1620），建设仁寿塔，成为垷坦村标志性建筑，成为垷坦村的名片。 </p>
             <p>2013 年，垷坦村确定为第二批中国传统村落，对于垷坦传统村落的保护和发展具有里程碑的意义。</p>
         </div>
-        <hr>
+        
     </div>
-    
+    <div class="footer"><script>$(".footer").load("../foot.html")</script></div>
 </body>
 </html>
