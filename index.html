@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
@@ -44,9 +44,12 @@ header nav{position:absolute;right:10px;}
 /* header nav > ul > li{float:left;} */
 header nav > ul > li > a{font-family: '楷体';display:block;padding:20px 0px;margin-right:80px;color:white;font-size:21px;}
 header nav > ul > li > a:hover,header nav > ul > li > a:hover{color: white;text-decoration: none;}
-.carousel-inner img {
+.carousel-inner .big {
       width: 100%;
-      height: 100%;
+      position: relative;
+  }
+  .carousel-inner .xieqie{
+    position: absolute;z-index: 1;width: 60%;height: 100%;
   }
   .news{
     padding-top: 40px;
@@ -102,8 +105,8 @@ header nav > ul > li > a:hover,header nav > ul > li > a:hover{color: white;text-
 line-height: 32px;
 color: gray;}
 .title>h4{color: gray;}
-.three{margin-top: 40px;}
-.three>li{display:inline-block;
+.three img{margin-top: 40px;width: 100%;padding:0 5%;}
+.three>li{float: left;
 width: 32%;
 }
 .three_p{
@@ -111,7 +114,9 @@ width: 32%;
     letter-spacing: 1px;
     padding:0 1%;
     color: gray;}
-    .icon>li{display:inline-block;
+    .icon img{margin-top: 40px;width: 100%;padding:0 5%;}
+    .icon>li{display: inline-block;
+        vertical-align: top;
     width: 15%;}
     .footer{
         margin-top: 50px;
@@ -238,7 +243,7 @@ width: 32%;
                         <a href="" class="" data-toggle="dropdown">乡村治理</a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="" class="dropdown-item"></a>
+                                <a href="xczl/jzyg.html" class="dropdown-item">建制沿革</a>
                             </li>
                         </ul>
                     </li>
@@ -256,28 +261,37 @@ width: 32%;
         </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="images/big1.png">
+            <div>
+            <img src="images/pipa.png" class="xieqie">
+            <img src="images/big1.png" class="big">
+            </div>   
         </div>
-        <div class="carousel-item">
-            <img src="images/big2.png">
+        <div class="carousel-item" class="xieqie">
+            <img src="images/pipa.png" class="xieqie">
+            <img src="images/big2.png" class="big">
         </div>
-        <div class="carousel-item">
-            <img src="images/big3.png">
+        <div class="carousel-item" class="xieqie">
+            <img src="images/pipa.png" class="xieqie">
+            <img src="images/big3.png" class="big">
         </div>
-        <div class="carousel-item">
-            <img src="images/big4.png">
+        <div class="carousel-item" class="xieqie">
+            <img src="images/pipa.png" class="xieqie">
+            <img src="images/big4.png" class="big">
         </div>
     </div>
     <div class="carousel-caption">
-        <div style="text-align: left; line-height: 40px;">
-            <p style="font-size: xx-large;">6.20日 - 8.15日</h3>
-            <p>风情枇杷园·欢乐琵琶宴·琵琶文化馆</h6>
-            <p style="font-size: 40px;">垷坦 <span style="font-size: 60px;">枇杷节</span></p>
-            <p style="font-size: xx-large;">邀您一起来体验！</h1>
+        <div>
+            <div style="line-height: 40px;text-align: left;position:absolute;bottom: 50%;">
+                <p style="font-size: xx-large;">5.20日 - 6.15日</h3>
+                <p>风情枇杷园·欢乐琵琶宴·琵琶文化馆</h6>
+                <p style="font-size: 40px;">垷坦 <span style="font-size: 60px;">枇杷节</span></p>
+                <p style="font-size: xx-large;">邀您一起来体验！</h1>
+            </div>
+            <div style="position: relative;text-align: right;">
+                <img src="images/logo.png">
+            </div>
         </div>
-        <div style="text-align: right;">
-            <img src="images/logo.png">
-        </div>
+        
       </div>
     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -304,6 +318,8 @@ width: 32%;
             </div>
             <div class="wenzi"><p>一起来采摘！垷坦茶叶季，快叫上你的小伙伴，一起来垷坦采茶叶吧！</p></div>
         </li>
+    </ul>
+    <img src="images/dian.png">
 </div>
 
 <div class="middle">
@@ -338,7 +354,6 @@ width: 32%;
     </div>
     <hr>
 </div>
-
 <div class="middle">
     <div class="title">
         <h1 class="display-4">垷坦概况</h1>
@@ -407,12 +422,12 @@ width: 32%;
         <div class="foot">
             <div class="about">
                 <h2>关于我们</h2>
-                <hr color=white style="margin-left: 0;width:25%;">
                 <div>
-                    <img src="images/wechat.png" alt="微信">
-                    <img src="images/weibo.png" alt="微博">
+                    <img src="images/wechat.png" alt="微信" >
+                    <img src="images/weibo.png" alt="微博" style="margin-left: 20px;">
                 </div>
             </div>
+            <hr color=white style="margin-left: 0;width:25%;">
             <div class="foot-nav">
                 <ul>
                     <li>垷坦首页<ul>
