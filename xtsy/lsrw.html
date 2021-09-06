@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
+    <title>历史人物馆</title>
+    <style>
+        .wrap a:link,.wrap a:hover,.wrap a:visited {
+    text-decoration: none;
+    color: gray;
+}
+        .wrap{width: 72%;
+            margin: 0 auto;
+            margin-top: -55px;
+        }
+        .page-nav{
+            position:relative;
+            padding-top: 125px;
+            padding-bottom: 10px;
+            color: gray;
+            text-indent: 4em;
+        }
+        .page-nav>p>span{
+            color: black;
+        }
+        .dh>img{
+            position:absolute;
+        }
+        .dh>h2{
+            position:relative; top:50px;left:80px;
+            font-family: '隶书';
+        }
+        .middle{
+      width: 72%;
+      margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 50px;
+    }
+    .middle>.title{
+        text-align: left;
+    }
+    .middle>.image>img{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        max-width: 100%;
+    }
+    .middle>.text{font-size: 18px;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+line-height: 32px;
+color: gray;}
+.middle a{color: #494949;}
+.title>h4{color: gray;}
+.three img{margin-top: 40px;width: 80%;padding:0 5%;}
+.three>li{float: left;
+width: 32%;
+}
+.three_p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding:0 1%;
+    color: gray;}
+    @media screen and (max-width:800px) {
+            .three>li{
+width: 100%;
+}
+    }
+    </style>
+</head>
+<body>
+    <div class="header"><script>$(".header").load("../head.html")</script></div>
+    <div class="wrap">
+        <div class="dh">
+            <img src="images/title.png">
+            <h2>历史人物馆</h2>
+        </div>
+        <div class="page-nav"><p><a href="../index.html">首页</a> / 垷坦首页 <span>/ 历史人物馆</span></p></div>
+        <hr>
+    </div>
+    
+    <div class="middle">
+        <div class="title">
+            <h1>历史人物</h1>
+            <h4>LISHI&nbsp;&nbsp;RENWU</h4>
+        </div>
+        <ul class="three">
+            <li>
+                <div>
+                    <img src="images/syy.png">
+                    <h3>舒元舆</h3>
+                    <p class="three_p">舒元舆，字升远。唐朝宰相，出生于垷坦...</p>
+                </div>
+                <div>
+                    <a href="lsrwg.html#syy" target="_blank">了解更多</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/zsw.png">
+                    <h3>周三畏</h3>
+                    <p class="three_p">周三畏，字正仲。垷坦是其隐居地...</p>
+                </div>
+                <div>
+                    <a href="lsrwg.html#zsw" target="_blank">了解更多</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/zdy.png">
+                    <h3>周敦颐</h3>
+                    <p class="three_p">周敦颐，字茂叔。垷坦周氏第五代祖先...</p>
+                </div>
+                <div>
+                    <a href="lsrwg.html#zdy" target="_blank">了解更多</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer"><script>$(".footer").load("../foot.html")</script></div>
+</body>
+</html>
