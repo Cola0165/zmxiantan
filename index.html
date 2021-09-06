@@ -84,7 +84,7 @@ header nav > div > ul > li > a:hover,header nav > div >ul > li > a:hover{color: 
         width: 100%;
     }
     .middle>.image>.xtsy>div{
-        position: relative;display:inline-block;
+        position: relative;float:left;
         width: 33%;
     }
     .middle>.image>.xtsy>div>img{
@@ -120,31 +120,37 @@ width: 32%;
         vertical-align: top;
     width: 15%;}
     .footer{
-        margin-top: 50px;
         background-color: #252525;
         overflow: hidden;
     }
-    .foot{width: 1380px;
+    .foot{
+        width: 80%;
     margin: 0 auto;
     color: white;
     }
+    .about{margin-top: 20px;}
+    .about h4{
+        float: left;
+    }
     .about>div{
-        float: right;
+        text-align: right;
     }
     .foot-nav{
         overflow: hidden;
+        text-align: center;
+        width: 100%;
     }
     .foot-nav>ul>li{
-        font-size: 25px;
-        margin-right: 90px;
-        float:left;
+        font-size: 1.2vw;
+        margin-right: 7%;
+        display: inline-block;vertical-align: top;
     }
     .foot-nav a{color: gray;text-decoration: none;}
     .foot-nav a:hover{color: #B7B7B7;}
     .foot-nav>ul>li>ul{
         padding-top: 10px;
         padding-left: 0;
-        font-size: 20px;
+        font-size: 1.1vw;
     }
     .foot-nav>ul>li>ul>li{
         padding-top: 10px;
@@ -458,8 +464,8 @@ header nav > div > ul > li > a{margin-right:20px;}
     <div class="footer">
         <div class="foot">
             <div class="about">
-                <h2>关于我们</h2>
                 <div>
+                    <h4>关于我们</h4>
                     <img src="images/wechat.png" alt="微信" >
                     <img src="images/weibo.png" alt="微博" style="margin-left: 20px;">
                 </div>
