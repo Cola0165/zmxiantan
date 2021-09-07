@@ -1,67 +1,49 @@
 <style>
-    .footer{
-        margin-top: 50px;
-        background-color: #252525;
-        overflow: hidden;
-    }
-    .foot{width: 1380px;
-    margin: 0 auto;
-    color: white;
-    }
-    .about>div{
-        float: right;
-    }
-    .foot-nav{
-        overflow: hidden;
-    }
-    .foot-nav>ul>li{
-        font-size: 25px;
-        margin-right: 90px;
-        float:left;
-    }
+    .footer{background-color: #252525;overflow: hidden;}
+    .foot{width: 80%;margin: 0 auto;color: white;}
+    .about{margin-top: 20px;}
+    .about h4{float: left;}
+    .about>div{text-align: right;}
+    .foot-nav{overflow: hidden;text-align: center;width: 100%;}
+    .foot-nav>ul>li{font-size: 1.2vw;margin-right: 7%;display: inline-block;vertical-align: top;}
     .foot-nav a{color: gray;text-decoration: none;}
     .foot-nav a:hover{color: #B7B7B7;}
-    .foot-nav>ul>li>ul{
-        padding-top: 10px;
-        padding-left: 0;
-        font-size: 20px;
+    .foot-nav>ul>li>ul{padding-top: 10px;padding-left: 0;font-size: 1.1vw;}
+    .foot-nav>ul>li>ul>li{padding-top: 10px;}
+    .addr{text-align: left;}
+    @media screen and (max-width:800px) {
+        .about{display: none;}
+        .foot-nav{display: none;}
     }
-    .foot-nav>ul>li>ul>li{
-        padding-top: 10px;
-    }
-    .addr{
-        text-align: left;
-        }
 </style>
 <div class="footer">
     <div class="foot">
         <div class="about">
-            <h2>关于我们</h2>
                 <div>
+                    <h4>关于我们</h4>
                     <img src="/images/wechat.png" alt="微信" >
                     <img src="/images/weibo.png" alt="微博" style="margin-left: 20px;">
                 </div>
-            </div>
-            <hr color=white style="margin-left: 0;width:25%;">
+        </div>
         <div class="foot-nav">
+            <hr color=white style="margin-left: 0;width:20%;">
             <ul>
-                <li>垷坦首页<ul>
+                <li>垷坦首页
+                    <ul>
                         <li><a href="/xtsy/szfyk.html">数字非遗库</a></li>
                         <li><a href="/xtsy/lsrw.html">历史人物馆</a></li>
                         <li><a href="/xtsy/xccpzs.html">乡村产品展示</a></li>
                     </ul>
                 </li>
-                <li>垷坦概况<ul>
+                <li>垷坦概况
+                    <ul>
                         <li><a href="/xtgk/wenhua.html">文化</a></li>
                         <li><a href="/xtgk/feiyi.html">非遗</a></li>
                         <li><a href="/xtgk/chanpin.html">产品</a></li>
                     </ul>
                 </li>
-                <!-- <li>垷坦文创<ul>
-                        
-                    </ul>
-                </li> -->
-                <li>玩转垷坦<ul>
+                <li>玩转垷坦
+                    <ul>
                         <li><a href="/wzxt/jtzn.html">交通指南</a></li>
                         <li><a href="/wzxt/dtdh.html">地图导航</a></li>
                         <li><a href="/wzxt/chanpin.html">产品</a></li>
@@ -69,16 +51,18 @@
                         <li><a href="/xtwc/baozhuang.html">包装</a></li>
                     </ul>
                 </li>
-                <li>数字文化<ul>
+                <li>数字文化
+                    <ul>
                         <li><a href="/szwh/stg.html">视听馆</a></li>
                         <li><a href="/szwh/zbj.html">直播间</a></li>
                         <li><a href="/szwh/jlsh.html">记录生活</a></li>
                         <li><a href="/szwh/xtdh.html">垷坦动画</a></li>
                     </ul>
                 </li>
-                <li>服务优化<ul>
-                        <li><a href="https://www.wjx.cn/vj/eD3sIiY.aspx" target="_blank">游客建议</a></li>
-                        <li><a href="https://www.wjx.cn/vj/QijZVnE.aspx" target="_blank">疑问解答</a></li>
+                <li>服务优化
+                    <ul>
+                        <li><a href="/fwyh/ykjy.html" target="_blank">游客建议</a></li>
+                        <li><a href="/fwyh/ywjd.html" target="_blank">疑问解答</a></li>
                     </ul>
                 </li>
             </ul>

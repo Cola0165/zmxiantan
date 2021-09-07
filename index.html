@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
@@ -17,16 +17,13 @@ li {
 }
         header {
     position: fixed;
-    
-    /* min-height: 120px; */
     width: 100%;
     z-index: 9999;
-    
     background: black;
     opacity: 0.7;
 }
         .head{width: 100%;}
-        .logo{width: 30px;
+        .logo{width: 25px;
             margin-left: 50px;
             /* margin-top: 1px;
             margin-bottom: 1px;
@@ -39,14 +36,14 @@ li {
             margin-left: 80px;
         } */
 /* header nav ul > .dropDown > ul{position:absolute;display:none;} */
-header nav ul > .dropdown > ul li a{padding:5px 55px 5px 20px;color:white;font-size:18px;font-family:'楷体';}
+header nav ul > .dropdown > ul li a{color:white;font-size:18px;font-family:'楷体';}
 .dropdown-menu{background-color: black;}
 
 header nav{position:absolute;}
 /* header nav > ul > li{float:left;} */
 header nav > div > ul{margin-left: 60px;}
-header nav > div > ul > li > a{font-family: '楷体';display:block;padding:20px 0px;margin-right:80px;color:white;font-size:21px;}
-header nav > div > ul > li > a:hover,header nav > div >ul > li > a:hover{color: white;text-decoration: none;}
+header nav > div > ul > li > a{font-family: '楷体';display:block;padding:5px 0px;margin-right:80px;color:white;font-size:21px;}
+header nav > div > ul > li > a:hover{color: white;text-decoration: none;}
 .carousel-inner .big {
       width: 100%;
       position: relative;
@@ -84,14 +81,14 @@ header nav > div > ul > li > a:hover,header nav > div >ul > li > a:hover{color: 
         width: 100%;
     }
     .middle>.image>.xtsy>div{
-        position: relative;float:left;
+        float: left;
         width: 33%;
     }
     .middle>.image>.xtsy>div>img{
-        width: 45%;
+        width: 40%;
     }
     .middle>.image>.xtsy>div>a{
-        position: relative;top: -75px;color: white;font-family: '隶书';font-size: 1.2vw;
+        position: relative;color: white;font-family: '隶书';font-size: 1.2vw;bottom: 3.7vw;
     }
     .middle>.image>.xtsy>div>a:hover{
         color: gray;
@@ -176,14 +173,9 @@ width: 100%;
       
       width: 100%;
   }
-  .logo{width: 30px;
+  .logo{width: 25px;
             margin-left: 0px;
         }
-        header nav > div > ul{margin-left: 0px;}
-header nav > div > ul > li > a{margin-right:20px;}
-.middle>.image>.xtsy>div>img{
-        
-    }
 }
     </style>
 </head>
@@ -216,7 +208,7 @@ header nav > div > ul > li > a{margin-right:20px;}
         }
             </script>
             <nav class="navbar navbar-expand-sm navbar-dark">
-                <div class="logo">
+                <div>
                     <a href="index.html">
                         <img src="images/logo.png" class="logo">
                     </a>
@@ -374,14 +366,14 @@ header nav > div > ul > li > a{margin-right:20px;}
     </div>
     <div class="image">
         <img src="images/lxxt.png"> 
-        <div class="xtsy" style="position:relative;top: -180px;margin-bottom: -150px;overflow: hidden;">
+        <div class="xtsy" style="position: relative;bottom: 10vw;">
             <div>
                 <img src="images/smbg.png">
                 <a href="xtsy/szfyk.html"><p>数字非遗库</p></a>
             </div>
             <div>
                 <img src="images/smbg.png">
-                <a href="xtsy/lsrwg.html"><p>历史人物馆</p></a>
+                <a href="xtsy/lsrw.html"><p>历史人物馆</p></a>
             </div>
             <div>
                 <img src="images/smbg.png">
@@ -394,7 +386,7 @@ header nav > div > ul > li > a{margin-right:20px;}
         <p>垷坦村不仅拥有悠久的历史、丰富的数字非遗产物。据相关历史资料记载，此地还是不少名人雅士的故地以及长眠之地。唐朝丞相舒元舆、宋朝大理寺卿周三畏、宋明理学开山鼻祖周敦颐等都与垷坦有着密切的关系。</p>
     </div>
     <div>
-        <a href="xtsy/lsrwg.html">了解更多</a>
+        <a href="xtsy/lsrw.html">了解更多</a>
     </div>
     <hr>
 </div>
@@ -407,7 +399,7 @@ header nav > div > ul > li > a{margin-right:20px;}
         <li>
             <div>
                 <img src="images/xtgk1.png">
-                <h3>文化</h3>
+                <a href="xtgk/wenhua.html"  style="text-decoration: none;"><h3>文化</h3></a>
                 <p class="three_p">垷坦村建村 1000 多年 ，历史悠久，名人辈出。古时称坦清嘉庆年间改为垷坦。</p>
             </div>
             <div>
@@ -417,7 +409,7 @@ header nav > div > ul > li > a{margin-right:20px;}
         <li>
             <div>
                 <img src="images/xtgk2.png">
-                <h3>非遗</h3>
+                <a href="xtgk/feiyi.html"  style="text-decoration: none;"><h3>非遗</h3></a>
                 <p class="three_p">垷坦村有着丰富的非物质文化产物。龙亭、銮驾等。</p>
             </div>
             <div>
@@ -427,7 +419,7 @@ header nav > div > ul > li > a{margin-right:20px;}
         <li>
             <div>
                 <img src="images/xtgk3.png">
-                <h3>产品</h3>
+                <a href="xtgk/chanpin.html"  style="text-decoration: none;"><h3>产品</h3></a>
                 <p class="three_p">垷坦村在悠久的历史条件下，诞生了许多自然产品。枇杷、茶叶等都是当季特色。</p>
             </div>
             <div>
@@ -472,7 +464,7 @@ header nav > div > ul > li > a{margin-right:20px;}
                 </div>
             </div>
             <div class="foot-nav">
-                <hr color=white style="margin-left: 0;width:25%;">
+                <hr color=white style="margin-left: 0;width:20%;">
                 <ul>
                     <li>垷坦首页<ul>
                             <li><a href="xtsy/szfyk.html">数字非遗库</a></li>
@@ -506,8 +498,8 @@ header nav > div > ul > li > a{margin-right:20px;}
                         </ul>
                     </li>
                     <li>服务优化<ul>
-                            <li><a href="https://www.wjx.cn/vj/eD3sIiY.aspx" target="_blank">游客建议</a></li>
-                            <li><a href="https://www.wjx.cn/vj/QijZVnE.aspx" target="_blank">疑问解答</a></li>
+                            <li><a href="fwyh/ykjy.html" target="_blank">游客建议</a></li>
+                            <li><a href="fwyh/ywjd.html" target="_blank">疑问解答</a></li>
                         </ul>
                     </li>
                 </ul>
