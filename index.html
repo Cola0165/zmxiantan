@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/head.css">
     <script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
     <title>垷坦</title>
@@ -14,24 +15,6 @@
         }
         
         body{font-family: '微软雅黑';}
-ul,
-li {
-    list-style: none;
-}
-        header {
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
-    background: black;
-    opacity: 0.7;
-}
-        .head{width: 100%;}
-        .logo{width: 25px;
-            margin-left: 50px;
-            /* margin-top: 1px;
-            margin-bottom: 1px;
-            float: left; */
-        }
         /* .header-info
         {
             float: right;
@@ -39,14 +22,7 @@ li {
             margin-left: 80px;
         } */
 /* header nav ul > .dropDown > ul{position:absolute;display:none;} */
-header nav ul > .dropdown > ul li a{color:white;font-size:18px;font-family:'楷体';}
-.dropdown-menu{background-color: black;}
-
-header nav{position:absolute;}
 /* header nav > ul > li{float:left;} */
-header nav > div > ul{margin-left: 60px;}
-header nav > div > ul > li > a{font-family: '楷体';display:block;padding:5px 0px;margin-right:80px;color:white;font-size:21px;}
-header nav > div > ul > li > a:hover{color: white;text-decoration: none;}
 .carousel-inner .big {
       width: 100%;
       position: relative;
@@ -82,6 +58,11 @@ header nav > div > ul > li > a:hover{color: white;text-decoration: none;}
     .middle>.image>img{
         margin-top: 40px;
         width: 100%;
+        transition: all 0.6s;
+    }
+    .middle>.image>img:hover{
+        
+        transform: scale(1.2);
     }
     .middle>.image>.xtsy>div{
         float: left;
@@ -119,48 +100,6 @@ width: 32%;
     .icon>li{display: inline-block;
         vertical-align: top;
     width: 15%;}
-    .footer{
-        background-color: #252525;
-        overflow: hidden;
-    }
-    .foot{
-        width: 80%;
-    margin: 0 auto;
-    color: white;
-    }
-    .about{margin-top: 20px;}
-    .about h4{
-        float: left;
-    }
-    .about>div{
-        text-align: right;
-    }
-    .foot-nav{
-        overflow: hidden;
-        text-align: center;
-        width: 100%;
-    }
-    .foot-nav>ul>li{
-        font-size: 1.2vw;
-        margin-right: 7%;
-        display: inline-block;vertical-align: top;
-    }
-    .foot-nav a{color: gray;text-decoration: none;}
-    .foot-nav a:hover{color: #B7B7B7;}
-    .foot-nav>ul>li>ul{
-        padding-top: 10px;
-        padding-left: 0;
-        font-size: 1.1vw;
-    }
-    .foot-nav>ul>li>ul>li{
-        padding-top: 10px;
-    }
-    .addr{
-        text-align: left;}
-        @media screen and (max-width:1000px){
-            header nav > div > ul{margin-left: 0px;}
-header nav > div > ul > li > a{margin-right:20px;}
-        }
         @media screen and (max-width:800px) {
             .three>li{
 width: 100%;
@@ -249,17 +188,6 @@ width: 100%;
                 <ul class="navbar-nav">
                     <li>
                         <a href="index.html" class="">首页</a>
-                        <!-- <ul class="dropdown-menu">
-                            <li>
-                                <a href="xtsy/szfyk.html" class="dropdown-item">数字非遗库</a>
-                            </li>
-                            <li>
-                                <a href="xtsy/lsrw.html" class="dropdown-item">历史人物馆</a>
-                            </li>
-                            <li>
-                                <a href="xtsy/xccpzs.html" class="dropdown-item">乡村产品展示</a>
-                            </li>
-                        </ul> -->
                     </li>
                     <li class="dropdown active">
                         <a href="" class="" data-toggle="dropdown">垷坦概览</a>
@@ -559,63 +487,6 @@ width: 100%;
             </div>
         </div>   
     </div>
-    <div class="footer">
-        <div class="foot">
-            <div class="about">
-                <div>
-                    <h4>关于我们</h4>
-                    <img src="images/wechat.png" alt="微信" >
-                    <img src="images/weibo.png" alt="微博" style="margin-left: 20px;">
-                </div>
-            </div>
-            <div class="foot-nav">
-                <hr color=white style="margin-left: 0;width:20%;">
-                <ul>
-                    <li>垷坦概览<ul>
-                            <li><a href="xtgk/wenhua.html">村史文化</a></li>
-                            <li><a href="xtgk/chanpin.html">优质农特产品</a></li>
-                            <li><a href="xtgk/jzyg.html">建制沿革</a></li>
-                        </ul>
-                    </li>
-                    <li>线上文化馆<ul>
-                        <li><a href="szwh/stg.html">视听馆</a></li>
-                        <li><a href="szwh/zbj.html">直播间</a></li>
-                        <li><a href="szwh/jlsh.html">记录生活</a></li>
-                        <li><a href="https://0.u.h5mc.com/c/ckat/hter/index.html" target="_blank">垷坦动画</a></li>
-                    </ul>
-                </li>
-                    <li>玩转垷坦<ul>
-                            <li><a href="wzxt/jtzn.html">交通指南</a></li>
-                            <li><a href="wzxt/dtdh.html">地图导航</a></li>
-                            <li><a href="wzxt/chanpin.html">垷坦美食</a></li>
-                            <li><a href="wzxt/minsu.html">民宿</a></li>
-                            <li><a href="wzxt/xxhd.html">线下活动</a></li>
-                        </ul>
-                    </li>
-                    <li>垷坦文创<ul>
-                        <li><a href="xtwc/wccp.html">文创产品</a></li>
-                        <li><a href="xtwc/xtbz.html">垷坦壁纸</a></li>
-                    </ul>
-                </li>
-                    <li>服务优化<ul>
-                            <li><a href="fwyh/ykjy.html" target="_blank">游客建议</a></li>
-                            <li><a href="fwyh/ywjd.html" target="_blank">疑问解答</a></li>
-                        </ul>
-                    </li>
-                    <li>乡村治理<ul>
-                        <li><a href="xczl/czgg.html">村中公告</a></li>
-                        <li><a href="xczl/zfwjxc.html">政府文件宣传</a></li>
-                        <li><a href="xczl/crcmzs.html">村容村貌展示</a></li>
-                        <li><a href="xczl/cmyjsj.html">村民意见收集</a></li>
-                    </ul>
-                </li>
-                </ul>
-            </div>
-            <hr color="gray">
-            <div class="addr">
-                <p>浙江省金华市兰溪市女埠街道垷坦村</p>
-            </div>
-        </div>
-    </div>
+    <div class="footer"><script>$(".footer").load("../foot.html")</script></div>
 </body>
 </html>
