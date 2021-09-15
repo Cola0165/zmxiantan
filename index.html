@@ -180,7 +180,32 @@ width: 100%;
             margin-left: 0px;
         }
 }
+.middle {
+  opacity: 0;
+  transition: all .10s ease;
+}
+
+.middle.visible {
+  opacity: 1;
+}
     </style>
+    <script>
+        $(document).on("scroll", function () {
+  var pageTop = $(document).scrollTop()
+  var pageBottom = pageTop + $(window).height() - 20
+  var tags = $(".middle")
+
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i]
+
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible")
+    } else {
+      $(tag).removeClass("visible")
+    }
+  }
+});
+    </script>
 </head>
 <body>
     <header>
@@ -210,6 +235,7 @@ width: 100%;
             });
         }
             </script>
+                
             <nav class="navbar navbar-expand-sm navbar-dark">
                 <div>
                     <a href="index.html">
@@ -427,7 +453,6 @@ width: 100%;
             </div>
         </div>
     </div>
-    
     <div class="text">
         <p>垷坦村不仅拥有悠久的历史、丰富的数字非遗产物。据相关历史资料记载，此地还是不少名人雅士的故地以及长眠之地。唐朝丞相舒元舆、宋朝大理寺卿周三畏、宋明理学开山鼻祖周敦颐等都与垷坦有着密切的关系。</p>
     </div>
@@ -591,6 +616,6 @@ width: 100%;
                 <p>浙江省金华市兰溪市女埠街道垷坦村</p>
             </div>
         </div>
-    </div>   
+    </div>
 </body>
 </html>
