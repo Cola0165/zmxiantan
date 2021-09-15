@@ -15,3 +15,10 @@ ul,li {list-style: none;}
     @media screen and (max-width:800px) {
         .logo{width: 25px;margin-left: 0px;}
     }
+    img{
+        transition: all 0.6s;
+    }
+    img:hover{
+        
+        transform: scale(1.2);
+    }
